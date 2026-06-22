@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品详情 - 墨韵丹青</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <div class="logo-icon">墨</div>
+            <span>墨韵丹青</span>
+        </a>
+        <div class="nav-search">
+            <input type="text" class="search-input" placeholder="搜索作品...">
+        </div>
+        <div class="nav-links">
+            <a href="index.html">首页</a>
+            <a href="list.html">作品列表</a>
+            <a href="about.html">关于作者</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="detail-container">
+            <div class="art-detail">
+                <div class="art-detail-image">
+                    <img id="art-image" src="" alt="作品图片">
+                </div>
+
+                <div class="art-detail-info">
+                    <h1 class="art-detail-title" id="art-title">作品标题</h1>
+                    <span class="art-detail-category" id="art-category">分类</span>
+                    <p class="art-detail-desc" id="art-desc">作品描述</p>
+                    <div class="art-detail-specs">
+                        <p><strong>创作年份：</strong><span id="art-year">2024</span></p>
+                        <p><strong>材质：</strong><span id="art-medium">数位绘画</span></p>
+                        <p><strong>尺寸：</strong><span id="art-size">1920×1080</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <section style="margin-top: 60px;">
+                <div class="page-header" style="padding-left: 0;">
+                    <h2 class="page-title">相关作品</h2>
+                </div>
+                <div class="art-grid" id="related-grid">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>墨韵丹青 · 个人画作展示</p>
+        <p>© 2024 版权所有</p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
