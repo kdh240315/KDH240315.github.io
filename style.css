@@ -288,9 +288,10 @@ a {
 }
 
 .art-detail {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     gap: 40px;
+    align-items: flex-start;
 }
 
 .art-detail-image {
@@ -301,12 +302,15 @@ a {
 }
 
 .art-detail-image img {
-    max-width: 100%;
+    width: auto;
     height: auto;
+    max-height: 80vh;
     display: block;
 }
 
 .art-detail-info {
+    flex: 1;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
