@@ -103,7 +103,18 @@ function initDetailPage() {
     document.getElementById('related-grid').innerHTML = related.map(renderArtCard).join('');
 }
 
+function initWelcomeModal() {
+    const modal = document.getElementById('welcomeModal');
+    if (!modal) return;
+
+    setTimeout(() => {
+        modal.classList.add('hide');
+    }, 5000);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+    initWelcomeModal();
+    
     if (document.querySelector('.hero-section')) {
         initHomePage();
     }
